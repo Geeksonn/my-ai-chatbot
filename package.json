@@ -15,7 +15,9 @@
     "next": "15.4.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "zod": "^4.0.17"
+    "zod": "^4.0.17",
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.56.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
