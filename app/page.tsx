@@ -1,12 +1,17 @@
 'use client';
 
+import React from 'react';
 import { useChat } from '@ai-sdk/react';
 import { useState } from 'react';
 
 export default function Chat() {
     const [input, setInput] = useState('');
     const { messages, sendMessage } = useChat();
-    
+
+    React.useEffect(() => {
+        sendMessage({ text: 'bonjour' });
+    }, []);
+
     return (
         <div className='flex flex-col w-full max-w-md py-24 mx-auto stretch'>
             {messages.map((message) => (
